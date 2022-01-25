@@ -1,0 +1,6 @@
+.each {
+    margin: auto;
+    border: 1px solid black;
+    width: 60px;
+    height: 50px;
+}

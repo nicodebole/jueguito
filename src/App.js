@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Cuadricula from './components/cuadricula/Cuadricula';
 
 function App() {
+  // const [ chance, setChance ] = useState('');
+  // const [ fila, setFila ] = useState(0);
+  const [datos, setDatos] = useState([]);
+
+  // useEffect(() => {
+  //   console.log(chance);
+  //   console.log(objCua)
+  // }, [chance])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cuadricula palabras={datos}></Cuadricula>
+      <input id='palabra'></input>
+      <button onClick={() => setDatos(prev => ([...prev, document.getElementById('palabra').value]))}>Click</button>
     </div>
   );
 }
