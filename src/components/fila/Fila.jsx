@@ -2,14 +2,16 @@ import './fila.css';
 import $ from 'jquery';
 
 const Fila = ({ aleatoria, palabra, index }) => {
-    // const ASACAR = 'GATOS';
+    const yellow = '#c9b458';
+    const green = '#6aaa64';
+    const grey = '#787c7e';
 
-
-    const jq = (i, isNot) => {
-        if (isNot)
-            $(`#${index}-${i}`).css('background-color', '#393839');
+    const jq = (i, isNotIn) => {
+        if (isNotIn) 
+            $(`#${index}-${i}`).css('background-color', grey);
+        
         else
-            $(`#${index}-${i}`).css('background-color', palabra[i] === aleatoria[i] ? '#16c60c' : '#fff100');
+            $(`#${index}-${i}`).css('background-color', palabra[i] === aleatoria[i] ? green : yellow);
     }
 
     const crearFila = () => {
