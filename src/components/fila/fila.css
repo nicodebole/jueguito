@@ -3,4 +3,10 @@
     border: 1px solid black;
     width: 60px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
 }

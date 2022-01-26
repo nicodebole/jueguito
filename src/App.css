@@ -1,0 +1,12 @@
+.partida-container, .gameover-container{
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.search {
+    display: flex;
+    gap: 3px;
+}
