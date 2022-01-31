@@ -65,9 +65,8 @@ function App() {
 
   // VALIDO SI LA PALABRA TIENE 5 LETRAS
   const validar = (palabra) => {
-    if (palabra.length === 5) {
+    if (palabra.length === 5) 
       return true;
-    }
 
     return false;
   }
@@ -101,7 +100,9 @@ function App() {
         </div>
         ||
         <div className='gameover-container'>
-          <h1>{win ? 'GANASTE' : 'GAME OVER'}</h1>
+          {
+            win ? <h1>GANASTE</h1> : <div className='gameover'><h1>GAME OVER</h1><h2>La palabra era {palabraAleatoria}</h2></div>
+          }
           <button onClick={refreshPage}>JUGAR DE NUEVO</button>
         </div>
       }

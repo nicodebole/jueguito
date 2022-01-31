@@ -6,6 +6,10 @@
     margin-top: 100px;
 }
 
+.gameover {
+    text-align: center;
+}
+
 .search {
     display: flex;
     gap: 3px;
