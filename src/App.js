@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Cuadricula from './components/cuadricula/Cuadricula';
+import $ from 'jquery';
 
 function App() {
   const [datos, setDatos] = useState([]);
@@ -62,6 +63,7 @@ function App() {
     window.location.reload(false);
   }
 
+  // VALIDO SI LA PALABRA TIENE 5 LETRAS
   const validar = (palabra) => {
     if (palabra.length === 5) {
       return true;
@@ -69,6 +71,23 @@ function App() {
 
     return false;
   }
+
+  // VALIDAR CON LA TECLA ENTER
+  $("#palabra").on('keyup', function (e) {
+    if (e.key === 'Enter') {
+      e.stopImmediatePropagation();
+      if (validar(document.getElementById('palabra').value)) {
+        setDatos(prev => ([...prev, document.getElementById('palabra').value.toUpperCase()]));
+        setRonda(prev => prev + 1);
+        e.target.value = '';
+      }
+      else {
+        alert('Palabra incorrecta')
+      }
+    }
+  });
+
+
 
   return (
     <div>
@@ -78,8 +97,6 @@ function App() {
           <Cuadricula aleatoria={palabraAleatoria} palabras={datos}></Cuadricula>
           <div className='search'>
             <input id='palabra'></input>
-            <button onClick={() =>
-              validar(document.getElementById('palabra').value) ? setDatos(prev => ([...prev, document.getElementById('palabra').value.toUpperCase()])) & setRonda(prev => prev + 1) : alert('Palabra incorrecta')}>Click</button>
           </div>
         </div>
         ||
