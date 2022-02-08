@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jueguito/static/css/main.ce926626.css",
+    "main.js": "/jueguito/static/js/main.d243318c.js",
+    "static/js/787.034e54a2.chunk.js": "/jueguito/static/js/787.034e54a2.chunk.js",
+    "index.html": "/jueguito/index.html",
+    "main.ce926626.css.map": "/jueguito/static/css/main.ce926626.css.map",
+    "main.d243318c.js.map": "/jueguito/static/js/main.d243318c.js.map",
+    "787.034e54a2.chunk.js.map": "/jueguito/static/js/787.034e54a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce926626.css",
+    "static/js/main.d243318c.js"
+  ]
+}
