@@ -26,12 +26,12 @@ function App() {
     'MORAS', 'MORRO', 'MOÑOS', 'NABOS', 'NAZIS',
     'NUDOS', 'OBRAS', 'OLLAS', 'ONZAS', 'OPERA',
     'ORCAS', 'OVULO', 'PATOS', 'PAÑAL', 'PECAS',
-    'PENES', 'PERAS', 'PESAS', 'PIPAS', 'PLANTA',
+    'PECES', 'PERAS', 'PESAS', 'PIPAS', 'PLANTA',
     'PLENO', 'PODER', 'POZOS', 'QUESO', 'RATAS',
     'REDES', 'REJAS', 'REYES', 'RIFAS', 'RIMAN',
     'ROCAS', 'RUNAS', 'SAPOS', 'SONAR', 'SUCIO',
-    'SUELA', 'SUSHI', 'TACOS', 'TAPAS', 'TEMAS',
-    'TETAS', 'TOPOS', 'URNAS', 'VACAS', 'VAGOS',
+    'SUELA', 'SUSHI', 'TACOS', 'TAPAS', 'TECLA',
+    'TEMAS', 'TOPOS', 'URNAS', 'VACAS', 'VAGOS',
     'VINOS', 'VOLAR', 'VOTAR', 'YOGUR', 'ZORRO',
     'ZURDO'
   ]
